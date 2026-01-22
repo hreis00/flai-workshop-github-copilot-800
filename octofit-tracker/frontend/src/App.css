@@ -1,0 +1,424 @@
+/* Custom OctoFit Tracker Styles */
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background-attachment: fixed;
+}
+
+/* Navigation customization */
+.navbar {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #00f2fe !important;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  color: #4facfe !important;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(79, 172, 254, 0.4);
+}
+
+.nav-link {
+  color: #a8dadc !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem !important;
+  border-radius: 6px;
+  margin: 0 0.25rem;
+}
+
+.nav-link:hover {
+  color: #4facfe !important;
+  background: rgba(79, 172, 254, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Main content area */
+.container-fluid {
+  padding: 0;
+}
+
+/* Home page hero section */
+.hero-section {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
+  border-radius: 15px;
+  padding: 3rem;
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+  margin-top: 2rem;
+  border: 2px solid rgba(79, 172, 254, 0.3);
+}
+
+.hero-section h1 {
+  color: #0f2027;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(79, 172, 254, 0.2);
+}
+
+.hero-section .lead {
+  color: #2c5364;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.hero-section hr {
+  border-top: 3px solid #4facfe;
+  width: 100px;
+  margin: 2rem auto;
+  opacity: 1;
+}
+
+/* Component containers */
+.content-wrapper {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fcff 100%);
+  border-radius: 15px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  margin: 2rem auto;
+  max-width: 1200px;
+  border: 2px solid rgba(79, 172, 254, 0.2);
+}
+
+/* Table styling enhancements */
+.table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,.08);
+}
+
+.table thead {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.table thead th {
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 1.2rem;
+  letter-spacing: 0.5px;
+  color: #0f2027;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(79, 172, 254, 0.1);
+}
+
+.table tbody tr:hover {
+  background: linear-gradient(135deg, #e0f4ff 0%, #cceeff 100%);
+  transform: scale(1.005);
+  box-shadow: 0 2px 8px rgba(79, 172, 254, 0.2);
+}
+
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+  color: #2c5364;
+  font-weight: 500;
+}
+
+/* Card styling enhancements */
+.card {
+  border: 2px solid rgba(79, 172, 254, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fcff 100%);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(79, 172, 254, 0.3);
+  border-color: #4facfe;
+}
+
+.card-title {
+  color: #0f2027;
+  font-weight: bold;
+  font-size: 1.35rem;
+  text-shadow: 1px 1px 2px rgba(79, 172, 254, 0.1);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* List group customization */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(79, 172, 254, 0.15);
+  padding: 0.85rem 1rem;
+  background: transparent;
+  color: #2c5364;
+  font-weight: 500;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.list-group-item:hover {
+  background: rgba(79, 172, 254, 0.05);
+}
+
+/* Button enhancements */
+.btn-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border: none;
+  padding: 0.6rem 1.75rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);
+  color: #0f2027;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.5);
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
+.btn-outline-primary {
+  border: 2px solid #4facfe;
+  color: #4facfe;
+  font-weight: 600;
+  padding: 0.6rem 1.75rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: #0f2027;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4);
+}
+
+.btn-outline-success {
+  border: 2px solid #00d4aa;
+  color: #00d4aa;
+  font-weight: 600;
+  padding: 0.6rem 1.75rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-outline-success:hover {
+  background: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
+  color: white;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 212, 170, 0.4);
+}
+
+/* Loading and error states */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.spinner-border {
+  color: #4facfe;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Page headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #0f2027;
+  font-weight: bold;
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 4px solid transparent;
+  border-image: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-image-slice: 1;
+  display: inline-block;
+  color: #0f2027;
+  text-shadow: 2px 2px 4px rgba(79, 172, 254, 0.2);
+}
+
+/* Alert customization */
+.alert {
+  border-radius: 10px;
+  border: 2px solid;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+  font-weight: 500;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+  border-color: #ff6b6b;
+  color: #c92a2a;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f4ff 100%);
+  border-color: #4facfe;
+  color: #0f2027;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+  }
+  
+  .content-wrapper {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .table {
+    font-size: 0.875rem;
+  }
+  
+  .navbar-brand img {
+    height: 32px;
+  }
+}
+
+/* Badge customizations */
+.badge {
+  font-weight: 600;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  letter-spacing: 0.3px;
+}
+
+.badge.bg-primary {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: #0f2027;
+}
+
+.badge.bg-success {
+  background: linear-gradient(135deg, #00d4aa 0%, #00b894 100%) !important;
+  color: white;
+}
+
+.badge.bg-warning {
+  background: linear-gradient(135deg, #ffa502 0%, #ff6348 100%) !important;
+  color: white;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%) !important;
+  color: white;
+}
+
+.badge.bg-info {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+  color: #0f2027;
+}
+
+.badge.bg-secondary {
+  background: linear-gradient(135deg, #95a5a6 0%, #7f8c8d 100%) !important;
+  color: white;
+}
+
+/* Text color enhancements */
+.text-primary {
+  color: #4facfe !important;
+}
+
+.text-muted {
+  color: #2c5364 !important;
+  opacity: 0.7;
+}
+
+/* Animation for page transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* Icon colors */
+i.bi {
+  transition: all 0.3s ease;
+}
+
+.text-danger i {
+  color: #ff6b6b !important;
+}
+
+.text-warning i {
+  color: #ffa502 !important;
+}
+
+.text-success i {
+  color: #00d4aa !important;
+}
+
+.text-info i {
+  color: #4facfe !important;
+}
+
+/* Link styling */
+a {
+  color: #4facfe;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #00f2fe;
+  text-decoration: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(79, 172, 254, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
