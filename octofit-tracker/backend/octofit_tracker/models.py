@@ -1,15 +1,26 @@
 from django.db import models
+from django.contrib.auth.hashers import make_password, check_password
 
 
 class User(models.Model):
     name = models.CharField(max_length=200)
     email = models.EmailField(unique=True)
-    password = models.CharField(max_length=200)
+    password = models.CharField(max_length=128)  # Increased to accommodate hashed passwords
     team_id = models.CharField(max_length=100, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     
     class Meta:
         db_table = 'users'
+    
+    def save(self, *args, **kwargs):
+        # Hash password before saving if it's not already hashed
+        if self.password and not self.password.startswith('pbkdf2_'):
+            self.password = make_password(self.password)
+        super().save(*args, **kwargs)
+    
+    def verify_password(self, raw_password):
+        """Check if the provided password matches the hashed password"""
+        return check_password(raw_password, self.password)
     
     def __str__(self):
         return self.name
