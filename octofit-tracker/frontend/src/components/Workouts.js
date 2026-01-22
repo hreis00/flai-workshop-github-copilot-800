@@ -101,8 +101,8 @@ function Workouts() {
                         <strong>Difficulty</strong>
                       </span>
                       <span className={`badge ${
-                        workout.difficulty === 'Beginner' ? 'bg-success' :
-                        workout.difficulty === 'Intermediate' ? 'bg-warning text-dark' :
+                        workout.difficulty === 'Easy' ? 'bg-success' :
+                        workout.difficulty === 'Medium' ? 'bg-warning text-dark' :
                         'bg-danger'
                       }`}>
                         {workout.difficulty || 'N/A'}
